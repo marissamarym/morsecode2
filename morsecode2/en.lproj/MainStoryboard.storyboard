@@ -14,7 +14,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5U-4s-dNI">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="SuU-M4-4qx"/>
+                                    <constraint firstAttribute="width" constant="268" id="v6S-9V-YYP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -23,9 +23,13 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBs-2k-V1S">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="0zn-lq-2Ua"/>
+                                    <constraint firstAttribute="width" constant="106" id="lzk-L8-gVZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -35,20 +39,33 @@
                                     <action selector="changeGreeting:" destination="2" eventType="touchUpInside" id="U95-PH-Yv3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-Ps-yIS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="263" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-Ps-yIS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="o1d-m9-6Pj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter the text to be converted:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP0-Ms-oKt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="Xw9-pW-Src"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eyi-Ps-yIS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="203" id="CQn-rP-yec"/>
-                            <constraint firstItem="E5U-4s-dNI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="86" id="LdS-nU-ZTB"/>
-                            <constraint firstItem="eyi-Ps-yIS" firstAttribute="leading" secondItem="hBs-2k-V1S" secondAttribute="leading" type="default" id="OkU-lN-u7F"/>
-                            <constraint firstItem="eyi-Ps-yIS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="116" id="iH9-zd-2Ol"/>
-                            <constraint firstItem="E5U-4s-dNI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="129" id="kpI-5U-M7N"/>
-                            <constraint firstItem="hBs-2k-V1S" firstAttribute="top" secondItem="3" secondAttribute="top" constant="262" id="mlF-Ph-4Rq"/>
+                            <constraint firstAttribute="bottom" secondItem="eyi-Ps-yIS" secondAttribute="bottom" constant="71" id="BQD-hm-3qU"/>
+                            <constraint firstItem="E5U-4s-dNI" firstAttribute="trailing" secondItem="eyi-Ps-yIS" secondAttribute="trailing" type="default" id="IQD-lv-89p"/>
+                            <constraint firstItem="E5U-4s-dNI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="135" id="c4w-Rx-YQ0"/>
+                            <constraint firstItem="hBs-2k-V1S" firstAttribute="top" secondItem="3" secondAttribute="top" constant="238" id="d5B-Nj-bZr"/>
+                            <constraint firstItem="dP0-Ms-oKt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="31" id="m7l-fC-6aj"/>
+                            <constraint firstAttribute="trailing" secondItem="dP0-Ms-oKt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nVx-p2-Mrb"/>
+                            <constraint firstItem="hBs-2k-V1S" firstAttribute="centerX" secondItem="E5U-4s-dNI" secondAttribute="centerX" type="default" id="sXI-OA-VPC"/>
+                            <constraint firstItem="E5U-4s-dNI" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="zTk-Pk-34q"/>
                         </constraints>
                     </view>
                     <connections>
