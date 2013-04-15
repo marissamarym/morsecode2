@@ -23,6 +23,10 @@
 		A081AD1E171BA33C009ADCF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACF9171BA33B009ADCF5 /* Foundation.framework */; };
 		A081AD26171BA33C009ADCF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A081AD24171BA33C009ADCF5 /* InfoPlist.strings */; };
 		A081AD29171BA33C009ADCF5 /* morsecode2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A081AD28171BA33C009ADCF5 /* morsecode2Tests.m */; };
+		FCA9B953171CA8B50044172E /* bassdrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B94F171CA8B50044172E /* bassdrum.mp3 */; };
+		FCA9B954171CA8B50044172E /* longpause.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B950171CA8B50044172E /* longpause.mp3 */; };
+		FCA9B955171CA8B50044172E /* shortpause.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B951171CA8B50044172E /* shortpause.mp3 */; };
+		FCA9B956171CA8B50044172E /* snaredrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B952171CA8B50044172E /* snaredrum.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		A081AD25171BA33C009ADCF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A081AD27171BA33C009ADCF5 /* morsecode2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = morsecode2Tests.h; sourceTree = "<group>"; };
 		A081AD28171BA33C009ADCF5 /* morsecode2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = morsecode2Tests.m; sourceTree = "<group>"; };
+		FCA9B94F171CA8B50044172E /* bassdrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bassdrum.mp3; sourceTree = "<group>"; };
+		FCA9B950171CA8B50044172E /* longpause.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = longpause.mp3; sourceTree = "<group>"; };
+		FCA9B951171CA8B50044172E /* shortpause.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shortpause.mp3; sourceTree = "<group>"; };
+		FCA9B952171CA8B50044172E /* snaredrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snaredrum.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,10 @@
 		A081ACFE171BA33B009ADCF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCA9B94F171CA8B50044172E /* bassdrum.mp3 */,
+				FCA9B950171CA8B50044172E /* longpause.mp3 */,
+				FCA9B951171CA8B50044172E /* shortpause.mp3 */,
+				FCA9B952171CA8B50044172E /* snaredrum.mp3 */,
 				A081ACFF171BA33B009ADCF5 /* morsecode2-Info.plist */,
 				A081AD00171BA33B009ADCF5 /* InfoPlist.strings */,
 				A081AD03171BA33B009ADCF5 /* main.m */,
@@ -236,6 +248,10 @@
 				A081AD0C171BA33B009ADCF5 /* Default@2x.png in Resources */,
 				A081AD0E171BA33C009ADCF5 /* Default-568h@2x.png in Resources */,
 				A081AD11171BA33C009ADCF5 /* MainStoryboard.storyboard in Resources */,
+				FCA9B953171CA8B50044172E /* bassdrum.mp3 in Resources */,
+				FCA9B954171CA8B50044172E /* longpause.mp3 in Resources */,
+				FCA9B955171CA8B50044172E /* shortpause.mp3 in Resources */,
+				FCA9B956171CA8B50044172E /* snaredrum.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
