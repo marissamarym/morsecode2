@@ -151,15 +151,18 @@
             charbits = [bits charValue];
             //^tmpary2 should be the chardata array
 		}
-		for (int i = 1; i <= charbits; i++) {
-			if (charcode % 2) {
-				result = [result stringByAppendingString:@"-"];
-			} else {
-				result = [result stringByAppendingString:@"."];
+        
+        if (ascval != 32) {
+            for (int i = 1; i <= charbits; i++) {
+                if (charcode % 2) {
+                    result = [result stringByAppendingString:@"-"];
+                } else {
+                    result = [result stringByAppendingString:@"."];
+                }
+                charcode = charcode / 2;
             }
-			charcode = charcode / 2;
         }
-		if (bits) {
+		if (bits && ascval != 32) {
 			result = [result stringByAppendingString:@"/"];
         }
 	}
