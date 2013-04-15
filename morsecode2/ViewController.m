@@ -147,7 +147,7 @@
         if (ascval > 33 && ascval < 91) {
 			code = [chardata objectAtIndex:(ascval - 34)];
             charcode = [code charValue];
-			bits = [chardata objectAtIndex:(ascval - 34)];
+			bits = [sizedata objectAtIndex:(ascval - 34)];
             charbits = [bits charValue];
             //^tmpary2 should be the chardata array
 		}
