@@ -44,6 +44,7 @@
 //fill in this method with our code!!!
 
 - (IBAction)changeGreeting:(id)sender {
+    /*
     char chardata[] = { 18, 00, 00, 00, 00, 30, 45,
         
         45, 00, 00, 51, 33, 42, 9, 31, 30, 28,
@@ -57,7 +58,7 @@
         11, 2, 0, 1, 4, 8, 6, 9, 13, 3
         
     };
-    
+    //NSCharacterSet* sizedata = [6, 00];
     char sizedata[] = { 6, 00, 00, 00, 00, 6, 6,
         
         6, 00, 00, 6, 6, 6, 5, 5, 5, 5,
@@ -69,11 +70,51 @@
         3, 4, 2, 4, 3, 4, 2, 2, 3, 4,
         
         4, 3, 3, 1, 3, 4, 3, 4, 4, 4
-        
-    };
+     
+    };*/
+    
+    NSNumber *eighteen = @18;
+    NSNumber *zero = @00;
+    NSNumber *thirty = @30;
+    NSNumber *fortyfive = @45;
+    NSNumber *fiftyone = @51;
+    NSNumber *thirtythree = @33;
+    NSNumber *fourtytwo = @42;
+    NSNumber *nine = @9;
+    NSNumber *thirtyone = @31;
+    NSNumber *twentyeight = @28;
+    NSNumber *twentyfour = @24;
+    NSNumber *sixteen = @16;
+    NSNumber *one = @1;
+    NSNumber *three = @3;
+    NSNumber *seven = @7;
+    NSNumber *fifteen = @15;
+    NSNumber *seventeen = @17;
+    NSNumber *twelve = @12;
+    NSNumber *twentytwo = @22;
+    NSNumber *two = @2;
+    NSNumber *five = @5;
+    NSNumber *four = @4;
+    NSNumber *fourteen = @14;
+    NSNumber *six = @6;
+    NSNumber *eleven = @11;
+    NSNumber *eight = @8;
+    NSNumber *thirteen = @13;
+    NSNumber *fortytwo = [NSNumber numberWithChar:42];
+    
+    NSArray * chardata = [[NSArray alloc] initWithObjects:eighteen, zero, zero, zero, zero, thirty,
+                          fortyfive, fortyfive, zero, zero, fiftyone, thirtythree, fortytwo, nine, thirtyone, thirty,
+                          twentyeight, twentyfour, sixteen, zero, one, three, seven, fifteen, seven, zero, zero, seventeen,
+                          zero, twelve, twentytwo, two, one, five, one, zero, four, three, zero, zero, fourteen, five, two,
+                          three, one, seven, six, eleven, two, zero, one, four, eight, six, nine, thirteen, three, nil];
+    
+    NSArray * sizedata = [[NSArray alloc] initWithObjects: six, zero, zero, zero, zero, six, six,
+                          six, zero, zero, six, six, six, five, five, five, five, five, five, five, five, five, five, five,
+                          six, zero, zero, five, zero, six, six, two, four, four, three, one, four, three, four, two, four,
+                          three, four, two, two, three, four, four, three, three, one, three, four, three, four, four, four, nil];
     
     //converts sizedata to NSMutableArray
-    NSMutableArray * tmpary = [[NSMutableArray alloc] initWithCapacity: 1000];
+    /*NSMutableArray * tmpary = [[NSMutableArray alloc] initWithCapacity: 1000];
     for (int i = 0; i < 1000; i++)
     {
         [tmpary addObject: [NSString stringWithCString: &sizedata[i] encoding:NSASCIIStringEncoding]];
@@ -84,7 +125,7 @@
     for (int i = 0; i < 1000; i++)
     {
         [tmpary addObject: [NSString stringWithCString: &chardata[i] encoding:NSASCIIStringEncoding]];
-    }
+    }*/
 
     
     
@@ -103,8 +144,8 @@
 			result = [result stringByAppendingString:@" "];
 		}
         if (ascval > 33 && ascval < 91) {
-			//code = [tmpary2 objectAtIndex:(ascval - 34)];
-			//bits = [tmpary2 objectAtindex:(ascval - 34)];
+			//code = [chardata objectAtIndex:(ascval - 34)];
+			//bits = [chardata objectAtindex:6];
             //^tmpary2 should be the chardata array
 		}
 		for (int i = 1; i <= bits; i++) {
@@ -119,8 +160,8 @@
 			result = [result stringByAppendingString:@"/"];
         }
 	}
-    //self.label.text = result;->prints out result
-    self.label.text = @"testing";
+    self.label.text = result;
+    //self.label.text = @"testing";
     /*
     self.userName = self.textField.text;
     
