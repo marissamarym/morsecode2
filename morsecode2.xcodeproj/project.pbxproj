@@ -384,7 +384,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
 				INFOPLIST_FILE = "morsecode2/morsecode2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +398,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
 				INFOPLIST_FILE = "morsecode2/morsecode2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +459,7 @@
 				A081AD2E171BA33C009ADCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A081AD2F171BA33C009ADCF5 /* Build configuration list for PBXNativeTarget "morsecode2Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +468,7 @@
 				A081AD31171BA33C009ADCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

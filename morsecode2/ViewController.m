@@ -72,34 +72,34 @@
         4, 3, 3, 1, 3, 4, 3, 4, 4, 4
      
     };*/
-    
-    NSNumber *eighteen = @18;
-    NSNumber *zero = @00;
-    NSNumber *thirty = @30;
-    NSNumber *fortyfive = @45;
-    NSNumber *fiftyone = @51;
-    NSNumber *thirtythree = @33;
-    NSNumber *fourtytwo = @42;
-    NSNumber *nine = @9;
-    NSNumber *thirtyone = @31;
-    NSNumber *twentyeight = @28;
-    NSNumber *twentyfour = @24;
-    NSNumber *sixteen = @16;
-    NSNumber *one = @1;
-    NSNumber *three = @3;
-    NSNumber *seven = @7;
-    NSNumber *fifteen = @15;
-    NSNumber *seventeen = @17;
-    NSNumber *twelve = @12;
-    NSNumber *twentytwo = @22;
-    NSNumber *two = @2;
-    NSNumber *five = @5;
-    NSNumber *four = @4;
-    NSNumber *fourteen = @14;
-    NSNumber *six = @6;
-    NSNumber *eleven = @11;
-    NSNumber *eight = @8;
-    NSNumber *thirteen = @13;
+
+    NSNumber *eighteen = [NSNumber numberWithChar:18];
+    NSNumber *zero = [NSNumber numberWithChar:00];
+    NSNumber *thirty = [NSNumber numberWithChar:30];
+    NSNumber *fortyfive = [NSNumber numberWithChar:45];
+    NSNumber *fiftyone = [NSNumber numberWithChar:51];
+    NSNumber *thirtythree = [NSNumber numberWithChar:33];
+    NSNumber *fourtytwo = [NSNumber numberWithChar:42];
+    NSNumber *nine = [NSNumber numberWithChar:9];
+    NSNumber *thirtyone = [NSNumber numberWithChar:31];
+    NSNumber *twentyeight = [NSNumber numberWithChar:28];
+    NSNumber *twentyfour = [NSNumber numberWithChar:24];
+    NSNumber *sixteen = [NSNumber numberWithChar:16];
+    NSNumber *one = [NSNumber numberWithChar:1];
+    NSNumber *three = [NSNumber numberWithChar:3];
+    NSNumber *seven = [NSNumber numberWithChar:7];
+    NSNumber *fifteen = [NSNumber numberWithChar:15];
+    NSNumber *seventeen = [NSNumber numberWithChar:17];
+    NSNumber *twelve = [NSNumber numberWithChar:12];
+    NSNumber *twentytwo = [NSNumber numberWithChar:22];
+    NSNumber *two = [NSNumber numberWithChar:2];
+    NSNumber *five = [NSNumber numberWithChar:5];
+    NSNumber *four = [NSNumber numberWithChar:4];
+    NSNumber *fourteen = [NSNumber numberWithChar:14];
+    NSNumber *six = [NSNumber numberWithChar:6];
+    NSNumber *eleven = [NSNumber numberWithChar:11];
+    NSNumber *eight = [NSNumber numberWithChar:8];
+    NSNumber *thirteen = [NSNumber numberWithChar:13];
     NSNumber *fortytwo = [NSNumber numberWithChar:42];
     
     NSArray * chardata = [[NSArray alloc] initWithObjects:eighteen, zero, zero, zero, zero, thirty,
@@ -133,8 +133,9 @@
     NSString *str = self.textField.text;
     str = [str uppercaseString];
 	
-    char code, bits;
-    NSString *result=@"";
+    NSNumber * code, *bits;
+    char charcode, charbits;
+    NSString *result= @"";
     bits = 0;
     char ascval;
     for (int i = 0; i <= [str length] - 1; i++) {
@@ -144,23 +145,28 @@
 			result = [result stringByAppendingString:@" "];
 		}
         if (ascval > 33 && ascval < 91) {
-			//code = [chardata objectAtIndex:(ascval - 34)];
-			//bits = [chardata objectAtindex:6];
+			code = [chardata objectAtIndex:(ascval - 34)];
+            charcode = [code charValue];
+			bits = [chardata objectAtIndex:(ascval - 34)];
+            charbits = [bits charValue];
             //^tmpary2 should be the chardata array
 		}
-		for (int i = 1; i <= bits; i++) {
-			if (code % 2) {
+		for (int i = 1; i <= charbits; i++) {
+			if (charcode % 2) {
 				result = [result stringByAppendingString:@"-"];
 			} else {
 				result = [result stringByAppendingString:@"."];
             }
-			code = code / 2;
+			charcode = charcode / 2;
         }
 		if (bits) {
 			result = [result stringByAppendingString:@"/"];
         }
 	}
+    
     self.label.text = result;
+    
+        
     //self.label.text = @"testing";
     /*
     self.userName = self.textField.text;
