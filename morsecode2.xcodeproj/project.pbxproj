@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A081ACF8171BA33B009ADCF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACF7171BA33B009ADCF5 /* UIKit.framework */; };
+		A081ACFA171BA33B009ADCF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACF9171BA33B009ADCF5 /* Foundation.framework */; };
+		A081ACFC171BA33B009ADCF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACFB171BA33B009ADCF5 /* CoreGraphics.framework */; };
+		A081AD02171BA33B009ADCF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A081AD00171BA33B009ADCF5 /* InfoPlist.strings */; };
+		A081AD04171BA33B009ADCF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A081AD03171BA33B009ADCF5 /* main.m */; };
+		A081AD08171BA33B009ADCF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A081AD07171BA33B009ADCF5 /* AppDelegate.m */; };
+		A081AD0A171BA33B009ADCF5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A081AD09171BA33B009ADCF5 /* Default.png */; };
+		A081AD0C171BA33B009ADCF5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A081AD0B171BA33B009ADCF5 /* Default@2x.png */; };
+		A081AD0E171BA33C009ADCF5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A081AD0D171BA33C009ADCF5 /* Default-568h@2x.png */; };
+		A081AD11171BA33C009ADCF5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A081AD0F171BA33C009ADCF5 /* MainStoryboard.storyboard */; };
+		A081AD14171BA33C009ADCF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A081AD13171BA33C009ADCF5 /* ViewController.m */; };
+		A081AD1C171BA33C009ADCF5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081AD1B171BA33C009ADCF5 /* SenTestingKit.framework */; };
+		A081AD1D171BA33C009ADCF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACF7171BA33B009ADCF5 /* UIKit.framework */; };
+		A081AD1E171BA33C009ADCF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A081ACF9171BA33B009ADCF5 /* Foundation.framework */; };
+		A081AD26171BA33C009ADCF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A081AD24171BA33C009ADCF5 /* InfoPlist.strings */; };
+		A081AD29171BA33C009ADCF5 /* morsecode2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A081AD28171BA33C009ADCF5 /* morsecode2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A081AD1F171BA33C009ADCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A081ACEC171BA33B009ADCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A081ACF3171BA33B009ADCF5;
+			remoteInfo = morsecode2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A081ACF4171BA33B009ADCF5 /* morsecode2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morsecode2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A081ACF7171BA33B009ADCF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A081ACF9171BA33B009ADCF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A081ACFB171BA33B009ADCF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A081ACFF171BA33B009ADCF5 /* morsecode2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "morsecode2-Info.plist"; sourceTree = "<group>"; };
+		A081AD01171BA33B009ADCF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A081AD03171BA33B009ADCF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A081AD05171BA33B009ADCF5 /* morsecode2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "morsecode2-Prefix.pch"; sourceTree = "<group>"; };
+		A081AD06171BA33B009ADCF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A081AD07171BA33B009ADCF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A081AD09171BA33B009ADCF5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A081AD0B171BA33B009ADCF5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A081AD0D171BA33C009ADCF5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A081AD10171BA33C009ADCF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A081AD12171BA33C009ADCF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A081AD13171BA33C009ADCF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A081AD1A171BA33C009ADCF5 /* morsecode2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = morsecode2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A081AD1B171BA33C009ADCF5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A081AD23171BA33C009ADCF5 /* morsecode2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "morsecode2Tests-Info.plist"; sourceTree = "<group>"; };
+		A081AD25171BA33C009ADCF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A081AD27171BA33C009ADCF5 /* morsecode2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = morsecode2Tests.h; sourceTree = "<group>"; };
+		A081AD28171BA33C009ADCF5 /* morsecode2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = morsecode2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A081ACF1171BA33B009ADCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081ACF8171BA33B009ADCF5 /* UIKit.framework in Frameworks */,
+				A081ACFA171BA33B009ADCF5 /* Foundation.framework in Frameworks */,
+				A081ACFC171BA33B009ADCF5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A081AD16171BA33C009ADCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081AD1C171BA33C009ADCF5 /* SenTestingKit.framework in Frameworks */,
+				A081AD1D171BA33C009ADCF5 /* UIKit.framework in Frameworks */,
+				A081AD1E171BA33C009ADCF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A081ACEB171BA33B009ADCF5 = {
+			isa = PBXGroup;
+			children = (
+				A081ACFD171BA33B009ADCF5 /* morsecode2 */,
+				A081AD21171BA33C009ADCF5 /* morsecode2Tests */,
+				A081ACF6171BA33B009ADCF5 /* Frameworks */,
+				A081ACF5171BA33B009ADCF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A081ACF5171BA33B009ADCF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A081ACF4171BA33B009ADCF5 /* morsecode2.app */,
+				A081AD1A171BA33C009ADCF5 /* morsecode2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A081ACF6171BA33B009ADCF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A081ACF7171BA33B009ADCF5 /* UIKit.framework */,
+				A081ACF9171BA33B009ADCF5 /* Foundation.framework */,
+				A081ACFB171BA33B009ADCF5 /* CoreGraphics.framework */,
+				A081AD1B171BA33C009ADCF5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A081ACFD171BA33B009ADCF5 /* morsecode2 */ = {
+			isa = PBXGroup;
+			children = (
+				A081AD06171BA33B009ADCF5 /* AppDelegate.h */,
+				A081AD07171BA33B009ADCF5 /* AppDelegate.m */,
+				A081AD0F171BA33C009ADCF5 /* MainStoryboard.storyboard */,
+				A081AD12171BA33C009ADCF5 /* ViewController.h */,
+				A081AD13171BA33C009ADCF5 /* ViewController.m */,
+				A081ACFE171BA33B009ADCF5 /* Supporting Files */,
+			);
+			path = morsecode2;
+			sourceTree = "<group>";
+		};
+		A081ACFE171BA33B009ADCF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A081ACFF171BA33B009ADCF5 /* morsecode2-Info.plist */,
+				A081AD00171BA33B009ADCF5 /* InfoPlist.strings */,
+				A081AD03171BA33B009ADCF5 /* main.m */,
+				A081AD05171BA33B009ADCF5 /* morsecode2-Prefix.pch */,
+				A081AD09171BA33B009ADCF5 /* Default.png */,
+				A081AD0B171BA33B009ADCF5 /* Default@2x.png */,
+				A081AD0D171BA33C009ADCF5 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A081AD21171BA33C009ADCF5 /* morsecode2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A081AD27171BA33C009ADCF5 /* morsecode2Tests.h */,
+				A081AD28171BA33C009ADCF5 /* morsecode2Tests.m */,
+				A081AD22171BA33C009ADCF5 /* Supporting Files */,
+			);
+			path = morsecode2Tests;
+			sourceTree = "<group>";
+		};
+		A081AD22171BA33C009ADCF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A081AD23171BA33C009ADCF5 /* morsecode2Tests-Info.plist */,
+				A081AD24171BA33C009ADCF5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A081ACF3171BA33B009ADCF5 /* morsecode2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A081AD2C171BA33C009ADCF5 /* Build configuration list for PBXNativeTarget "morsecode2" */;
+			buildPhases = (
+				A081ACF0171BA33B009ADCF5 /* Sources */,
+				A081ACF1171BA33B009ADCF5 /* Frameworks */,
+				A081ACF2171BA33B009ADCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = morsecode2;
+			productName = morsecode2;
+			productReference = A081ACF4171BA33B009ADCF5 /* morsecode2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A081AD19171BA33C009ADCF5 /* morsecode2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A081AD2F171BA33C009ADCF5 /* Build configuration list for PBXNativeTarget "morsecode2Tests" */;
+			buildPhases = (
+				A081AD15171BA33C009ADCF5 /* Sources */,
+				A081AD16171BA33C009ADCF5 /* Frameworks */,
+				A081AD17171BA33C009ADCF5 /* Resources */,
+				A081AD18171BA33C009ADCF5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A081AD20171BA33C009ADCF5 /* PBXTargetDependency */,
+			);
+			name = morsecode2Tests;
+			productName = morsecode2Tests;
+			productReference = A081AD1A171BA33C009ADCF5 /* morsecode2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A081ACEC171BA33B009ADCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Marissa Montgomery";
+			};
+			buildConfigurationList = A081ACEF171BA33B009ADCF5 /* Build configuration list for PBXProject "morsecode2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A081ACEB171BA33B009ADCF5;
+			productRefGroup = A081ACF5171BA33B009ADCF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A081ACF3171BA33B009ADCF5 /* morsecode2 */,
+				A081AD19171BA33C009ADCF5 /* morsecode2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A081ACF2171BA33B009ADCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081AD02171BA33B009ADCF5 /* InfoPlist.strings in Resources */,
+				A081AD0A171BA33B009ADCF5 /* Default.png in Resources */,
+				A081AD0C171BA33B009ADCF5 /* Default@2x.png in Resources */,
+				A081AD0E171BA33C009ADCF5 /* Default-568h@2x.png in Resources */,
+				A081AD11171BA33C009ADCF5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A081AD17171BA33C009ADCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081AD26171BA33C009ADCF5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A081AD18171BA33C009ADCF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A081ACF0171BA33B009ADCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081AD04171BA33B009ADCF5 /* main.m in Sources */,
+				A081AD08171BA33B009ADCF5 /* AppDelegate.m in Sources */,
+				A081AD14171BA33C009ADCF5 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A081AD15171BA33C009ADCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A081AD29171BA33C009ADCF5 /* morsecode2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A081AD20171BA33C009ADCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A081ACF3171BA33B009ADCF5 /* morsecode2 */;
+			targetProxy = A081AD1F171BA33C009ADCF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A081AD00171BA33B009ADCF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A081AD01171BA33B009ADCF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A081AD0F171BA33C009ADCF5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A081AD10171BA33C009ADCF5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A081AD24171BA33C009ADCF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A081AD25171BA33C009ADCF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A081AD2A171BA33C009ADCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A081AD2B171BA33C009ADCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A081AD2D171BA33C009ADCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
+				INFOPLIST_FILE = "morsecode2/morsecode2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A081AD2E171BA33C009ADCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
+				INFOPLIST_FILE = "morsecode2/morsecode2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A081AD30171BA33C009ADCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/morsecode2.app/morsecode2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
+				INFOPLIST_FILE = "morsecode2Tests/morsecode2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A081AD31171BA33C009ADCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/morsecode2.app/morsecode2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morsecode2/morsecode2-Prefix.pch";
+				INFOPLIST_FILE = "morsecode2Tests/morsecode2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A081ACEF171BA33B009ADCF5 /* Build configuration list for PBXProject "morsecode2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A081AD2A171BA33C009ADCF5 /* Debug */,
+				A081AD2B171BA33C009ADCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A081AD2C171BA33C009ADCF5 /* Build configuration list for PBXNativeTarget "morsecode2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A081AD2D171BA33C009ADCF5 /* Debug */,
+				A081AD2E171BA33C009ADCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A081AD2F171BA33C009ADCF5 /* Build configuration list for PBXNativeTarget "morsecode2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A081AD30171BA33C009ADCF5 /* Debug */,
+				A081AD31171BA33C009ADCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A081ACEC171BA33B009ADCF5 /* Project object */;
+}
